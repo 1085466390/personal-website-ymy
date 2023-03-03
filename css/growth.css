@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#container {
+	position: relative;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+/*版面居中*/
+/*banner*/
+#banner {
+	background: url('../img/banner4.gif') repeat-x;
+}
+
+/*banner背景图片设置*/
+#banner con {
+	display: block;
+}
+
+/*鼠标移到照片产生放大效果*/
+#banner .intro:hover {
+	box-shadow: 0px 0px 10px #333;
+	transition: all 400ms;
+	transform: scale(1.05);
+}
+
+/*菜单栏*/
+#link {
+	font-weight: bold;
+	/*字体加粗*/
+	cursor: hand;
+	/*鼠标变为手型*/
+	padding: 0px;
+	position: relative;
+	margin-top: -20px;
+	clear: left;
+	/*使导航菜单向左浮动*/
+	z-index: 20;
+	/*位于最上面*/
+}
+
+#link ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	width: 1100px;
+}
+
+/*设置列表样式*/
+#link ul li {
+	float: left;
+	text-align: center;
+	vertical-align: bottom;
+	display: block;
+	width: 263px;
+	height: 30px;
+	margin-top: 13px;
+	margin-right: 5px;
+	margin-bottom: 8px;
+	padding-top: 5px;
+	border-radius: 20px;
+	border: 3px dashed rgba(51, 102, 204, 0.8);
+	background-color: rgba(184, 231, 225, 0.7);
+}
+
+/*设置菜单的字体、背景、样式等*/
+#link ul li a {
+	font-size: 25px;
+	font-family: 华文隶书, 楷体;
+	text-decoration: none;
+	color: #5599Ff;
+}
+
+/*改变链接字体的样式*/
+#link ul li:hover {
+	background-color: #FFE5B5
+}
+
+#link ul li.radius:hover {
+	border-radius: 20px;
+}
+
+#link ul li ul li {
+	border: 3px dashed rgba(51, 102, 204, 0.8);
+	border-top: 0px;
+	background: #CDEEEa;
+	border-radius: 20px;
+	float: none
+}
+
+#link ul li ul {
+	display: none;
+	padding: 0;
+	position: absolute;
+}
+
+/*鼠标上移时显子菜单*/
+#link ul li:hover ul {
+	display: block;
+}
+
+#link ul li ul li:hover {
+	background: #FFE5B5;
+	border-radius: 20px;
+}
+
+
+/*content*/
+#content {
+	border-radius: 30px;
+	margin-bottom: 20px;
+	float: left;
+	width: 1100px;
+	height: 2400px;
+	background: url('../img/background4.jpg');
+	margin-top: 20px;
+}
+
+/*设置内容的边框样式、位置以及背景颜色等*/
+figure {
+	box-shadow: 0px 0px 10px #333;
+	border-radius: 20px;
+	background-color: rgba(102, 102, 102, 0.2);
+	border: 4px inset;
+	padding-bottom: 20px;
+}
+
+/*content*/
+#content {
+	width: 1100px;
+	font-family: 楷体, 黑体;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+/*设置内容版面的边框样式*/
+#content td {
+	background-color: transparent
+}
+
+#content tr {
+	text-align: center;
+	padding: 10px;
+	vertical-align: middle;
+}
+
+/*使表格内容居中*/
+#content .con {
+	display: inline-block;
+	height: 400px;
+	width: 500px;
+	margin-top: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 10px;
+	border: 4px inset;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px #333;
+	background-color: rgba(255, 217, 190, 0.46);
+}
+
+/*设置文字的字体、边框效果等*/
+#content .con ul {
+	line-height: 2em;
+}
+
+#content .con:hover {
+	transform: rotate(-12deg);
+	transition: all 400ms;
+}
+
+#content h3 {
+	margin-top: 15px;
+	font-family: "楷书";
+	color: #FFA666;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow: 0 0 5px #fff;
+	/*设置标题样式阴影效果*/
+}
+
+#content .con1 {
+	margin-left: 10px;
+	width: 1000px;
+	height: 800px;
+	padding: 40px;
+	margin-top: 20px;
+	background-color: rgba(255, 217, 190, 0.46);
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px #333;
+}
+
+#content .con2 {
+	margin-left: 10px;
+	width: 1000px;
+	height: 600px;
+	padding: 40px;
+	margin-top: 20px;
+	background-color: rgba(255, 217, 190, 0.46);
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px #333;
+}
+
+/*设置我的学校的内容边框样式以及文字效果*/
+img {
+	border-radius: 10px;
+}
+
+/*使图片有圆角效果*/
+img:hover {
+	transform: scale(1.1);
+	border-radius: 0px;
+	transition: all 400ms;
+}
+
+/*当鼠标移到照片上的时候照片放大*/
+#content .con1:hover {
+	transform: scale(1.02);
+	transition: all 200ms;
+}
+#content .con2:hover {
+	transform: scale(1.02);
+	transition: all 200ms;
+}
+
+/*当鼠标移到图片上的时候产生放大效果*/
+/*footer*/
+#footer {
+	clear: both;
+	width: 1100px;
+	height: 65px;
+	background-color: #FAE2B7;
+	border-radius: 20px 20px 0px 0px;
+	text-align: center;
+	margin-top: 40px;
+	margin: auto
+}
+
+/* CSS Document */

@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#container {
+	position: relative;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+/*版面居中*/
+/*banner*/
+#banner {
+	background: url('../img/banner3.gif') repeat-x;
+}
+
+/*banner背景图片设置*/
+#banner con {
+	display: block;
+}
+
+/*鼠标移到照片产生放大效果*/
+#banner .intro:hover {
+	box-shadow: 0px 0px 10px #333;
+	transition: all 400ms;
+	transform: scale(1.05);
+}
+
+/*设置banner的背景以及标题的文字效果*/
+/*菜单栏*/
+#link {
+	font-weight: bold;
+	/*字体加粗*/
+	cursor: hand;
+	/*鼠标变为手型*/
+	padding: 0px;
+	position: relative;
+	margin-top: -20px;
+	clear: left;
+	/*使导航菜单向左浮动*/
+	z-index: 20;
+	/*位于最上面*/
+}
+
+#link ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	width: 1100px;
+}
+
+/*设置列表样式*/
+#link ul li {
+	float: left;
+	text-align: center;
+	vertical-align: bottom;
+	display: block;
+	width: 263px;
+	height: 30px;
+	margin-top: 13px;
+	margin-right: 5px;
+	margin-bottom: 8px;
+	padding-top: 5px;
+	border-radius: 20px;
+	border: 3px dashed rgba(51, 102, 204, 0.8);
+	background-color: rgba(184, 231, 225, 0.7);
+}
+
+/*设置菜单的字体、背景、样式等*/
+#link ul li a {
+	font-size: 25px;
+	font-family: 华文隶书, 楷体;
+	text-decoration: none;
+	color: #5599Ff;
+}
+
+/*改变链接字体的样式*/
+#link ul li:hover {
+	background-color: #FFE5B5
+}
+
+#link ul li.radius:hover {
+	border-radius: 20px;
+}
+
+#link ul li ul li {
+	border: 3px dashed rgba(51, 102, 204, 0.8);
+	border-top: 0px;
+	background: #CDEEEa;
+	border-radius: 20px;
+	float: none
+}
+
+#link ul li ul {
+	display: none;
+	padding: 0;
+	position: absolute;
+}
+
+/*鼠标上移时显子菜单*/
+#link ul li:hover ul {
+	display: block;
+}
+
+#link ul li ul li:hover {
+	background: #FFE5B5;
+	border-radius: 20px;
+}
+/*当鼠标移上菜单时背景发生变化*/
+/*content*/
+#content {
+	border-radius: 30px;
+	margin-bottom: 20px;
+	float: left;
+	width: 1100px;
+	height: 2100px;
+	background: url('../img/background3.jpg');
+	margin-top: 20px;
+}
+
+
+/*设置内容的边框样式、位置以及背景颜色等*/
+figure {
+	box-shadow: 0px 0px 10px #333;
+	border-radius: 20px;
+	background-color: rgba(102, 102, 102, 0.2);
+	border: 4px inset;
+	padding-bottom: 20px;
+}
+
+/*设置内容的边框样式以及背景颜色*/
+#content .pic1 {
+	float: left;
+	display: inline-block;
+	width: 150px;
+	height: 350px;
+	margin-top: 30px;
+	margin-left: 30px;
+	padding-top: 40px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: 4px inset;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #333;
+	background-color: rgba(204, 204, 204, 0.40);
+}
+
+/*设置照片的边框样式、背景颜色以及*/
+#content .pic1 img {
+	box-shadow: 0px 0px 10px #333;
+}
+
+/*当鼠标移到照片上的时候照片放大*/
+#content .pic1:hover {
+	transform: scale(1.5);
+	transition: all 200ms;
+}
+
+/*设置链接文字的样式*/
+#content .con {
+	font-size: 22px;
+	font-weight: bold;
+	font-family: 楷体;
+	border: 5px dashed #8BB9FF;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	background-color: rgba(141, 141, 141, 0.64);
+	margin-left: 10px;
+	margin-right: 20px;
+	padding: 10px;
+	width: 1020px;
+	height: 750px;
+	float: right;
+	box-shadow: 0px 0px 10px #333;
+}
+
+#content .con:hover {
+	color: #004FC7;
+}
+
+#content h3 {
+	font-size: 28px;
+	text-shadow: 1px 1px 3px #333;
+	color: #F2B443;
+	text-align: center
+}
+
+/*设置标题样式阴影效果*/
+
+#content .con1 {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 隶书;
+	text-align: center;
+	color: #F2B443;
+	border: 5px dashed #8BB9FF;
+	border-radius: 20px;
+	background-color: rgba(204, 204, 204, 0.40);
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-right: 20px;
+	padding: 10px;
+	width: 1020px;
+	height: 40px;
+	float: left;
+	box-shadow: 0px 0px 10px #333;
+}
+#content .con1:hover{
+	color: #5599FF;
+	transform: scale(1.10);
+	transition: all 200ms;
+}
+
+#content .con2 {
+	border: 5px dashed #8BB9FF;
+	border-radius: 20px;
+	background-color: rgba(204, 204, 204, 0.40);
+	margin-top: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	width: 800px;
+	height: 360px;
+	float: right;
+	box-shadow: 0px 0px 10px #333;
+}
+
+#content .con2:hover {
+	transform: scale(1.10);
+	transition: all 200ms;
+}
+
+#content p {
+	font-size: 20px;
+	font-family: 楷体;
+	font-weight: bold;
+	text-align: justify;
+}
+
+#content h4 {
+	font-family: 隶书;
+	font-size: 30px;
+	margin-top: -5px;
+	color: #FFA666;
+	text-align: center;
+}
+
+/*设置标题样式阴影效果*/
+#content .con3 {
+	border: 5px dashed #8BB9FF;
+	border-radius: 20px;
+	background-color: rgba(204, 204, 204, 0.40);
+	margin-top: 50px;
+	margin-left: 30px;
+	margin-right: 20px;
+	padding: 10px;
+	width: 470px;
+	height: 470px;
+	box-shadow: 0px 0px 10px #333;
+}
+
+#content .con3:hover {
+	transform: scale(1.10);
+	transition: all 200ms;
+}
+#content .con4 {
+	font-size: 22px;
+	font-weight: bold;
+	font-family: 楷体;
+	border: 5px dashed #8BB9FF;
+	border-radius: 20px;
+	margin-bottom: 20px;
+	background-color: rgba(141, 141, 141, 0.64);
+	margin-left: 10px;
+	margin-right: 20px;
+	padding: 10px;
+	width: 1020px;
+	height: 80px;
+	float: right;
+	box-shadow: 0px 0px 10px #333;
+}
+
+#content .con4:hover {
+	color: #004FC7;
+}
+td img {
+	margin-left: 40px;
+	margin-right: 30px;
+}
+
+img {
+	border-radius: 10px;
+}
+
+/*使图片有圆角效果*/
+img:hover {
+	transform: scale(1.1);
+	border-radius: 0px;
+	transition: all 400ms;
+}
+
+/*鼠标移上时放大效果*/
+
+/*footer*/
+#footer {
+	clear: both;
+	width: 1100px;
+	height: 65px;
+	background-color: #BCBCBC;
+	border-radius: 20px 20px 0px 0px;
+	text-align: center;
+	margin-top: 40px;
+	margin: auto
+}
+
+/* CSS Document */

@@ -1,0 +1,395 @@
+@charset "utf-8";
+
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+#container {
+	position: relative;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+/*版面居中*/
+/*banner*/
+#banner {
+	background: url('../img/banner1.gif') repeat-x;
+}
+
+/*banner背景图片设置*/
+#banner con {
+	display: block;
+}
+
+/*鼠标移到照片产生放大效果*/
+#banner .intro:hover {
+	box-shadow: 0px 0px 10px #333;
+	transition: all 400ms;
+	transform: scale(1.05);
+}
+
+/*设置banner的背景以及标题的文字效果*/
+/*导航菜单*/
+#link {
+	font-weight: bold;
+	/*字体加粗*/
+	cursor: hand;
+	/*鼠标变为手型*/
+	padding: 0px;
+	position: relative;
+	margin-top: -20px;
+	clear: left;
+	/*使导航菜单向左浮动*/
+	z-index: 20;
+	/*位于最上面*/
+}
+
+#link ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	width: 1100px;
+}
+
+/*设置列表样式*/
+#link ul li {
+	float: left;
+	text-align: center;
+	vertical-align: bottom;
+	display: block;
+	width: 263px;
+	height: 30px;
+	margin-top: 13px;
+	margin-right: 5px;
+	margin-bottom: 8px;
+	padding-top: 5px;
+	border-radius: 20px;
+	border: 3px dashed rgba(51, 102, 204, 0.8);
+	background-color:#FFE5B5;
+}
+
+/*设置菜单的字体、背景、样式等*/
+#link ul li a {
+	font-size: 25px;
+	font-family: 华文隶书, 楷体;
+	text-decoration: none;
+	color: #FFA666;
+}
+
+/*改变链接字体的样式*/
+#link ul li:hover {
+	background-color: #FFE5B5;
+}
+
+#link ul li.radius:hover {
+	border-radius: 20px;
+}
+
+#link ul li ul li {
+	border: 3px dashed rgba(51, 102, 204, 0.8);
+	border-top: 0px;
+	background:#F1D7FF;
+	border-radius: 20px;
+	float:none;
+}
+
+#link ul li ul {
+	display: none;
+	padding: 0;
+	position: absolute;
+}
+
+/*鼠标上移时显示子菜单*/
+#link ul li:hover ul {
+	display: block;
+}
+
+#link ul li ul li:hover {
+	background: #FFE5B5;
+	border-radius: 20px;
+}
+/*设置列表的文字、边框样式以及背景颜色*/
+#link a {
+	text-decoration: none;
+	font-size: 25px;
+	font-family: 华文隶书, 楷体;
+	color: #c90;
+}
+
+/*改变链接字体的样式*/
+#link ul li:hover {
+	background-color: rgb(234, 210, 200);
+}
+
+/*当鼠标移上菜单时背景发生变化*/
+/*content*/
+#content {
+	border-radius: 30px;
+	margin-bottom: 20px;
+	float: left;
+	width: 1100px;
+	height: 1780px;
+	background: url('../img/background1.jpg');
+	margin-top: 20px;
+}
+
+
+/*设置内容的边框样式、位置以及背景颜色等*/
+figure {
+	box-shadow: 0px 0px 10px #333;
+	border-radius: 20px;
+	background-color: rgba(102, 102, 102, 0.2);
+	border: 4px inset;
+	padding-bottom: 20px;
+}
+img {
+	border-radius: 20px;
+}
+
+/*使图片有圆角效果*/
+img:hover {
+	transform: scale(1.1);
+	border-radius: 0px;
+	transition: all 400ms;
+}
+/*当鼠标移到照片上的时候照片放大*/
+
+#content .con:hover {
+	transform: scale(1.03);
+	transition: all 200ms;
+}
+#content .con7:hover {
+	transform: scale(1.03);
+	transition: all 200ms;
+}
+/*鼠标移上时放大效果*/
+/*设置盒子的样式*/
+#content .con {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 楷体;
+	border: 5px  dashed rgba(130,180,255,1.00);
+	border-radius: 20px;
+	background-color: rgba(255,139,234,0.18);
+	margin-top:50px;
+	margin-left: 30px;
+	padding: 10px;
+	width: 1000px;
+	height: 400px;
+	float: left;
+	box-shadow: #fff -10px 10px 2px,rgba（255,182,193,0.4） -18px 18px 2px;
+	/*双重边框阴影*/
+}
+#content .con8 {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: 楷体;
+	border: 5px  dashed rgba(130,180,255,1.00);
+	border-radius: 20px;
+	background-color: rgba(255,139,234,0.18);
+	margin-top:50px;
+	margin-left: 30px;
+	padding: 10px;
+	width: 1000px;
+	height: 300px;
+	float: left;
+	box-shadow: #fff -10px 10px 2px,rgba（255,182,193,0.4） -18px 18px 2px;
+	/*双重边框阴影*/
+}
+#content .con1{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 楷体;
+	margin-top: -30px;
+	width: 580px;
+	float: right;
+}
+#content .con2{
+	margin-top: -5px;
+	width: 400px;
+	float: left;
+	margin-left:0px; 
+		
+}
+#content .con3{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 楷体;
+	margin-top: -30px;
+	width: 600px;
+	float: left;
+}
+#content .con4{
+	margin-top: -10px;
+	width: 300px;
+	float: right;
+	margin-right: 50px;
+}
+#content .con6{
+	margin-top: 40px;
+	width: 500px;
+	height: 400px;
+	float: right;
+	border: 5px  dashed rgba(130,180,255,1.00);
+	border-radius: 20px;
+	background-color: rgba(255,139,234,0.18);
+}
+#content .con7{
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 楷体;
+	margin-top: 50px;
+	width: 500px;
+	height: 380px;
+	border: 5px  dashed rgba(130,180,255,1.00);
+	border-radius: 20px;
+	background-color: rgba(255,139,234,0.18);
+}
+/*第一个版块标题设置*/
+#content .con h4 {
+	font-size:35px;
+	font-weight:bold;
+	font-family:隶书;
+	text-align:center;
+	text-transform: uppercase;
+	color:#fFa666;
+	/*设置标题的艺术字*/
+	text-align: center;
+	margin-top: 5px;
+	font-weight: bold;
+	text-shadow: 0 0 5px #fff;
+	/*设置文本阴影*/
+}
+#content .con h4:hover {
+	/*标题字体颜色变化*/
+	color:#82b4ff;
+}
+/*第一个版块标题设置*/
+#content .con8 h4 {
+	font-size:35px;
+	font-weight:bold;
+	font-family:隶书;
+	text-align:center;
+	text-transform: uppercase;
+	color:#fFa666;
+	/*设置标题的艺术字*/
+	text-align: center;
+	margin-top: 5px;
+	font-weight: bold;
+	text-shadow: 0 0 5px #fff;
+	/*设置文本阴影*/
+}
+#content .con8 h4:hover {
+	/*标题字体颜色变化*/
+	color:#82b4ff;
+}
+
+
+
+#content .con6 h5 {
+	font-size:20px;
+	font-family:楷体;
+	text-indent: 2em;
+	text-align:left;
+	font-weight: bold;
+	text-shadow: 0 0 5px #fff;
+	/*设置文本阴影*/
+}
+#content .con6 h5:hover {
+	/*标题字体颜色变化*/
+	color:#82b4ff;}
+#content .con7 h6 {
+	font-size:35px;
+	font-weight:bold;
+	font-family:隶书;
+	text-align:center;
+	text-transform: uppercase;
+	color:#fFa666;
+	/*设置标题的艺术字*/
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-weight: bold;
+	text-shadow: 0 0 5px #fff;
+	/*设置文本阴影*/
+}
+#content .con7 h6:hover {
+	/*标题字体颜色变化*/
+	color:#82b4ff;
+}
+
+#leftbar {
+	float: left;
+	/*右浮动*/
+	margin: -10px 0px 10px 2px;
+	width: 400px;
+	text-align: center;
+}
+
+.out {
+	width: 500px;
+	height: 400px;
+	margin-top: 50px;
+	margin-left: 30px;
+	overflow: hidden;
+	/*超出部分隐藏*/
+	text-align: center;
+	border-radius: 20px;
+	background-color: rgba(255,139,234,0.18);
+	/*背景色*/
+	border: 5px  dashed rgba(130,180,255,1.00);
+}
+
+.con5 {
+	width: 400px;
+	/*滚动图片总宽*/
+	height: 1810px;
+	/*高度*/
+	overflow: hidden;
+	/*超出部分隐藏*/
+	animation: move 30s linear infinite normal;
+	/*移动 共40s*/
+	animation-fill-mode: forwards;
+}
+
+@keyframes move {
+	0% {
+		transform: translateY();
+		/*上下移*/
+	}
+
+	100% {
+		transform: translateY(-1500px);
+	}
+}
+
+.con5 li {
+	float: left;
+	/*左浮动*/
+	list-style: none;
+	overflow: hidden;
+}
+
+.con5 li img {
+	float: left;
+	width: 400px;
+	height: 300px;
+	margin-top: 20px;
+	border-radius: 20px;
+}
+
+/*footer*/
+#footer {
+	clear: both;
+	width: 1100px;
+	height: 65px;
+	background-color:#F8D2EF;
+	border-radius: 20px 20px 0px 0px;
+	text-align: center;
+	margin-top: 40px;
+	margin: auto
+}
+
+/* CSS Document */
